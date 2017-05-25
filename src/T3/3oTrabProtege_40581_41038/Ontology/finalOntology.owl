@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#"
+     xml:base="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Answer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Answer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AnswerCTH -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AnswerCTH">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AnswerSTH -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AnswerSTH">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Asks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Asks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AsksSimple -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#AsksSimple">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#CTHAnswerPH -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#CTHAnswerPH">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ContainsComplex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ContainsComplex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ContainsSimple -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ContainsSimple">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Executes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#STHAnswerPH -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#STHAnswerPH">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#HardwareNeeded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#HardwareNeeded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#HardwareType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#HardwareType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Operationals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Operationals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Priority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SubTasks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SubTasks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Supervisors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Supervisors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Tasks -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#Tasks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ComplexTaskHolon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#OperationalHolon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#ProductHolon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SimpleTaskHolon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dmrgo/ontologies/2016/9/finalOntology#SupervisorHolon"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#"
+     xml:base="http://www.semanticweb.org/issiaa2016/ontologies/myOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#consumes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#consumes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#contains">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#executes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Friendly_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Friendly_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Manufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Manufacturer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameters -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skills -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skills">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- BEGIN -->
+
+    <owl:NamedIndividual rdf:about="BEGIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEGIN</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Begin of the movement</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- END -->
+
+    <owl:NamedIndividual rdf:about="END">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">END</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">End of the movement</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- FORCE -->
+
+    <owl:NamedIndividual rdf:about="FORCE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FORCE</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force performed by the robot</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- PickAndPlace -->
+
+    <owl:NamedIndividual rdf:about="PickAndPlace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pick and Place from position BEGIN to END</Description>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PickAndPlace</Friendly_Name>
+        <contains rdf:resource="BEGIN"/>
+        <contains rdf:resource="END"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- Press -->
+
+    <owl:NamedIndividual rdf:about="Press">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ID>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press a part</Description>
+        <contains rdf:resource="FORCE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- ProductY -->
+
+    <owl:NamedIndividual rdf:about="ProductY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product executes Pick and Place and Press</Description>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProductY</Friendly_Name>
+        <consumes rdf:resource="PickAndPlace"/>
+        <consumes rdf:resource="Press"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- RobotX -->
+
+    <owl:NamedIndividual rdf:about="RobotX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</ID>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 Axis Robot</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 Axis Robot Model X</Description>
+        <Manufacturer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My Manufacturer</Manufacturer>
+        <executes rdf:resource="PickAndPlace"/>
+        <executes rdf:resource="Press"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/BEGIN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/BEGIN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BEGIN</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Begin of the movement</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/END -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/END">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">END</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">End of the movement</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/FORCE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/FORCE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</ID>
+        <Value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</Value>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FORCE</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force performed by the robot</Description>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integer</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/PickAndPlace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/PickAndPlace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ID>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pick and Place from position BEGIN to END</Description>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PickAndPlace</Friendly_Name>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press a part</Description>
+        <contains rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/BEGIN"/>
+        <contains rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/END"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/Press -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/Press">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</ID>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Press a part</Description>
+        <contains rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/FORCE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/ProductY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/ProductY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ID>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product executes Pick and Place and Press</Description>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProductY</Friendly_Name>
+        <consumes rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/PickAndPlace"/>
+        <consumes rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/Press"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/issiaa2016/ontologies/RobotX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/RobotX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</ID>
+        <Friendly_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 Axis Robot</Friendly_Name>
+        <Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 Axis Robot Model X</Description>
+        <Manufacturer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My Manufacturer</Manufacturer>
+        <executes rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/PickAndPlace"/>
+        <executes rdf:resource="http://www.semanticweb.org/issiaa2016/ontologies/Press"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Parameter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Resource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/issiaa2016/ontologies/myOntology#Skill"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.3-SNAPSHOT) http://owlapi.sourceforge.net -->
+
